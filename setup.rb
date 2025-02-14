@@ -1,4 +1,7 @@
 puts "Setup submodules"
+system('git submodule init')
+system('git submodule update')
+system('git submodule sync')
 system('git submodule foreach --recursive git submodule init')
 system('git submodule foreach --recursive git submodule update')
 system('git submodule foreach --recursive git submodule sync')
